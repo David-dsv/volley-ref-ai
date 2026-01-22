@@ -1,0 +1,2 @@
+# This directory contains trained model weights
+# Files: yolo_court_keypoints.pt, yolo_volleyball_ball.pt

@@ -1,0 +1,36 @@
+# VOLLEY-REF AI - Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core ML/CV
+ultralytics>=8.3.0          # YOLO models
+opencv-python>=4.8.0        # Computer Vision
+numpy>=1.24.0               # Numerical computing
+scipy>=1.11.0               # Scientific computing (trajectory fitting)
+
+# Tracking
+filterpy>=1.4.5             # Kalman filter implementation
+
+# Dataset management
+roboflow>=1.1.0             # Dataset download from Roboflow
+
+# Configuration
+pyyaml>=6.0                 # YAML config files
+
+# Progress & CLI
+tqdm>=4.65.0                # Progress bars
+rich>=13.0.0                # Rich terminal output
+
+# Optional - Jupyter notebooks
+jupyter>=1.0.0              # Jupyter notebook support
+matplotlib>=3.7.0           # Plotting
+seaborn>=0.12.0             # Statistical visualization
+
+# Optional - Development
+pytest>=7.0.0               # Testing
+black>=23.0.0               # Code formatting
+flake8>=6.0.0               # Linting
+mypy>=1.0.0                 # Type checking
+
+# Optional - Export formats
+onnx>=1.14.0                # ONNX export
+onnxruntime>=1.15.0         # ONNX inference

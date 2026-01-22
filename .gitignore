@@ -1,0 +1,166 @@
+# VOLLEY-REF AI - Git Ignore
+
+# ====================
+# Model weights (download from HuggingFace)
+# ====================
+weights/*.pt
+weights/*.onnx
+weights/*.engine
+!weights/.gitkeep
+
+# ====================
+# Datasets (download via script)
+# ====================
+datasets/
+!datasets/.gitkeep
+
+# ====================
+# Training runs
+# ====================
+runs/
+
+# ====================
+# Output files
+# ====================
+outputs/*.mp4
+outputs/*.avi
+outputs/*.jpg
+outputs/*.png
+outputs/*.csv
+!outputs/.gitkeep
+
+# ====================
+# Video files
+# ====================
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+
+# ====================
+# Confidential / Personal
+# ====================
+GIGAPROMPT*.md
+*.secret
+*.key
+*_private*
+volley_ref_ai/
+
+# ====================
+# Python
+# ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ====================
+# Virtual environments
+# ====================
+venv/
+env/
+ENV/
+.venv/
+
+# ====================
+# IDE
+# ====================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# ====================
+# Jupyter
+# ====================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ====================
+# OS files
+# ====================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ====================
+# Logs
+# ====================
+*.log
+logs/
+
+# ====================
+# Cache
+# ====================
+.cache/
+*.cache
+
+# ====================
+# Environment variables
+# ====================
+.env
+.env.local
+*.env
+
+# ====================
+# Temporary files
+# ====================
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ====================
+# Test artifacts
+# ====================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ====================
+# Documentation builds
+# ====================
+docs/_build/
+site/
+
+# ====================
+# Roboflow API key
+# ====================
+roboflow_config.json
+
+# ====================
+# Claude / AI session files
+# ====================
+.claude/
+
+# ====================
+# Base YOLO models (in root)
+# ====================
+/yolo*.pt
