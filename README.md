@@ -3,7 +3,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![YOLO](https://img.shields.io/badge/YOLO-v11-green.svg)](https://github.com/ultralytics/ultralytics)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Hugging Face](https://img.shields.io/badge/HuggingFace-Models-orange.svg)](https://huggingface.co/David-dsv/volley-ref-ai)
+[![Hugging Face](https://img.shields.io/badge/HuggingFace-Models-orange.svg)](https://huggingface.co/Davidsv/volley-ref-ai)
 
 **AI-powered volleyball referee system** - Automatic IN/OUT detection using Computer Vision and Deep Learning.
 
@@ -53,7 +53,7 @@ MODULE 5: VISUALIZATION
 ### Installation
 
 ```bash
-git clone https://github.com/David-dsv/volley-ref-ai.git
+git clone https://github.com/Davidsv/volley-ref-ai.git
 cd volley-ref-ai
 
 python -m venv venv
@@ -75,11 +75,11 @@ from huggingface_hub import hf_hub_download
 import shutil
 
 # Court keypoints model
-court = hf_hub_download('David-dsv/volley-ref-ai', 'yolo_court_keypoints.pt')
+court = hf_hub_download('Davidsv/volley-ref-ai', 'yolo_court_keypoints.pt')
 shutil.copy(court, 'weights/yolo_court_keypoints.pt')
 
 # Ball detection model
-ball = hf_hub_download('David-dsv/volley-ref-ai', 'yolo_volleyball_ball.pt')
+ball = hf_hub_download('Davidsv/volley-ref-ai', 'yolo_volleyball_ball.pt')
 shutil.copy(ball, 'weights/yolo_volleyball_ball.pt')
 
 print('Models downloaded to weights/')
