@@ -43,13 +43,13 @@ from huggingface_hub import hf_hub_download
 
 # Download court model
 court_model = hf_hub_download(
-    repo_id="vuong-vn/volley-ref-ai",
+    repo_id="David-dsv/volley-ref-ai",
     filename="yolo_court_keypoints.pt"
 )
 
 # Download ball model
 ball_model = hf_hub_download(
-    repo_id="vuong-vn/volley-ref-ai",
+    repo_id="David-dsv/volley-ref-ai",
     filename="yolo_volleyball_ball.pt"
 )
 ```
@@ -70,7 +70,7 @@ results = ball_model("volleyball_frame.jpg", conf=0.7)
 
 ### Full Pipeline
 
-See the [GitHub repository](https://github.com/vuong-vn/volley-ref-ai) for the complete VOLLEY-REF AI pipeline that combines both models for automatic IN/OUT detection.
+See the [GitHub repository](https://github.com/David-dsv/volley-ref-ai) for the complete VOLLEY-REF AI pipeline that combines both models for automatic IN/OUT detection.
 
 ## Training Details
 
@@ -106,7 +106,7 @@ MIT License
   author = {Vuong},
   title = {VOLLEY-REF AI: AI-Powered Volleyball Referee System},
   year = {2025},
-  url = {https://github.com/vuong-vn/volley-ref-ai}
+  url = {https://github.com/David-dsv/volley-ref-ai}
 }
 ```
 
